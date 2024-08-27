@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jute Pest Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        h1 {
+            font-size: 24px;
+            color: #2d6a4f;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #40916c;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        label:hover {
+            background-color: #2d6a4f;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1b4332;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #081c15;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+        .footer i {
+            color: #1b4332;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jute Pest Detection</h1>
+        <p>Upload an image of a insect to identify the class of jute pest.</p>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label for="file-upload"><i class="fas fa-upload"></i> Choose Image</label>
+            <input type="file" id="file-upload" name="file">
+            <button type="submit"><i class="fas fa-search"></i> Detect Pest</button>
+        </form>
+        <div class="footer">
+            <p>Powered by Deep Learning</p>
+            <p><i class="fas fa-bug"></i> Insect AI</p>
+        </div>
+    </div>
+</body>
+</html>
